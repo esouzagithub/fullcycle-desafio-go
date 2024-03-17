@@ -20,6 +20,8 @@ http://goporexemplo.golangbr.org/hello-world.html
 
 https://hub.docker.com/_/scratch/
 
+https://docs.docker.com/build/building/base-images/#creating-a-simple-parent-image-using-scratch
+
 https://hub.docker.com/_/golang/
 
 https://imasters.com.br/desenvolvimento/compilacao-estatica-com-golang/
