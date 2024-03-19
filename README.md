@@ -1,18 +1,18 @@
 # fullcycle desafio go
-Nesse projeto iremos usar o banco de dados mysql, criaremos uma aplicação em nodejs e o nginx com proxy reverso.
+Nesse projeto iremos criar uma imagem docker golang menor e segura com based on scratch.
 
 
 # Docker Hub
 
-https://hub.docker.com/repository/docker/esouza/fullcycle-node
+https://hub.docker.com/repository/docker/esouza/fullcycle
 
-https://hub.docker.com/repository/docker/esouza/nginx
+# Docker Build
 
-# Docker Compose Build
-docker-compose up -d --build
+docker build -t esouza/fullcycle . -f Dockerfile.multistage
 
-# Docker Compose Down
-docker-compose down
+# Docker Run
+
+docker run --rm -p 8080:8080 --name fullcycle esouza/fullcycle
 
 # Referências
 
